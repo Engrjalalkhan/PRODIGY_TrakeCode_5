@@ -6,7 +6,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 const HomeScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Text style={{ fontSize: 45, marginTop: 30, marginBottom: 80, color: 'black' }}>Welcome To QR Code</Text>
+      <Text style={{ fontSize: 45, marginBottom: 50, color: 'black' }}>Welcome to QR Scanner</Text>
       <View style={styles.row}>
         <TouchableOpacity style={styles.card} onPress={() => navigation.navigate('Create')}>
           <Icon name="add-circle-outline" size={40} color="#4CAF50" />
@@ -37,6 +37,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#f5f5f5', // Background color of the screen
+    marginBottom:100
   },
   row: {
     flexDirection: 'row',
